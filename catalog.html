@@ -9,28 +9,31 @@
   	<header class="header">
   		<div class="container">
   			<a class="header-logo" href="/">Барбершоп</a>
-                <nav class="header-navigation">
-          			<ul>
-            			<li>
-              				<a href="#">Информация</a>
-            			</li>
-            			<li>
-              				<a href="#">Новости</a>
-            			</li>
-            		<li>
-              				<a href="#">Прайс-лист</a>
-            		</li>
-            		<li>
-              				<a href="#">Магазин</a>
-            		</li>
-            		<li>
-              				<a href="#">Контакты</a>
-            		</li>
-          			</ul>
-        		</nav>
+
+        <nav class="header-navigation">
+          	<ul>
+            	<li>
+              	<a href="#">Информация</a>
+            	</li>
+            	<li>
+              	<a href="#">Новости</a>
+            	</li>
+            	<li>
+              	<a href="#">Прайс-лист</a>
+            	</li>
+            	<li>
+              	<a class="active" href="#">Магазин</a>
+            	</li>
+            	<li>
+              	<a href="#">Контакты</a>
+            	</li>
+          	</ul>
+        	</nav>
+
         <div class="header-user-block">
           <a class="login" href="#">Вход</a>
         </div>
+
       </div>
     </header>
 
@@ -38,125 +41,117 @@
     	<h1 class="page-title">Средства для ухода</h1>
     	<ul class="breadcrumbs">
     		<li>
-    			<a href="#">Главная</a>
+    			<a href="/">Главная</a>
     		</li>
     		<li>
     			<a href="#">Магазин</a>
     		</li>
-    		<li class="active">Средства для ухода</li>  <!-- исправлено -->
+    		<li class="active">Средства для ухода</li> 
     	</ul>
 
-    	<div class="wrapper">
-
-    		<div class="filter">
-
-<comment> какому классу отнести h2?</comment>
-        <h2>Производители</h2>
-
-<comment> какой класс задает стиль текстов в пунктах фильтра?</comment>
-
-<comment> как реализовать это фильтр?</comment>
-
-
-        <h2>Группы товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">                      
+    	<div class="filters">    		
+      <form action="https://echo.htmlacademy.ru" method="post"> <!-- or get? -->
+        <fieldset class="producer">
+          <legend class="product-contents-title">Производители:</legend>
+            <label><input type=="checkbox" name="producer" value="Baxter of California" checked>Baxter of California</label>
+            <label><input type=="checkbox" name="producer" value="Mr Natty"> Mr Natty</label>
+            <label><input type=="checkbox" name="producer" value="Suavecito" checked>Suavecito</label>
+            <label><input type=="checkbox" name="producer" value="Malin+Goetzo">Malin+Goetz</label>
+            <label><input type=="checkbox" name="producer" value="Murray’s">Murray’so</label>
+            <label><input type=="checkbox" name="producer" value="American Crew" checked>American Crew</label>
+        </fieldset>
+        <fieldset class="product-groups"> 
+          <legend class="product-contents-title">Группы товаров:</legend>       
             <label>
                 <input type="radio" name="product-groups" value="Бритвенные принадлежности">
                 Бритвенные принадлежности
-            </label><br>
+            </label>
             <label>
                 <input type="radio" name="product-groups" value="Средства для ухода" checked>
                 Средства для ухода
-            </label><br>
+            </label>
             <label>
                 <input type="radio" name="product-groups" value="Аксессуары">
                 Аксессуары
-            </label> <!-- исправлено -->
-          </form>
-
-
-
-        
-
-
-
-
-
-
-    		</div>
+            </label> 
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form> 
+    	</div>
 
     		<div class="content">
     			<ul class="products">
     				<li class="products-item"> 
     						<a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Набор для путешествий «Baxter of California»" class="products-item-image">
-                  <h3 class="products-item-title">Набор для путешествий «Baxter of California»</h3>
+                  <h2 class="products-item-title">Набор для путешествий «Baxter of California»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">2 900 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="product-buy-button" href="#">Купить</a> 
                 </div>
     				</li>
 
     				<li class="products-item"> 
                 <a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Увлажняющий кондиционер «Baxter of California»" class="products-item-image">
-                  <h3 class="products-item-title">Увлажняющий кондиционер «Baxter of California»</h3>
+                  <h2 class="products-item-title">Увлажняющий кондиционер «Baxter of California»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">750 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="login" href="#">Вход</a>
+                  <a class="product-buy-button" href="#">Купить</a>
                 </div>
             </li>
 
             <li class="products-item"> 
                 <a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Гель для волос «SUAVECITO»" class="products-item-image">
-                  <h3 class="products-item-title">Гель для волос «SUAVECITO»</h3>
+                  <h2 class="products-item-title">Гель для волос «SUAVECITO»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">290 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="product-buy-button" href="#">Купить</a>
                 </div>
             </li>
 
     				<li class="products-item"> 
                 <a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Глина для укладки волос  «American crew»" class="products-item-image">
-                  <h3 class="products-item-title">Глина для укладки волос  «American crew»</h3>
+                  <h2 class="products-item-title">Глина для укладки волос  «American crew»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">500 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="product-buy-button" href="#">Купить</a>
                 </div>
             </li>
 
     				<li class="products-item"> 
                 <a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Гель для волос «AMERICAN CREW" class="products-item-image">
-                  <h3 class="products-item-title">Гель для волос «AMERICAN CREW»</h3>
+                  <h2 class="products-item-title">Гель для волос «AMERICAN CREW»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">300 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="product-buy-button" href="#">Купить</a>
                 </div>
             </li>
 
     				<<li class="products-item"> 
                 <a href="#" class="products-item-link">
                   <img src="http://placehold.it/200x150" alt="Набор для бритья «Baxter of California»" class="products-item-image">
-                  <h3 class="products-item-title">Набор для бритья «Baxter of California»</h3>
+                  <h2 class="products-item-title">Набор для бритья «Baxter of California»</h2>
                 </a>
                 <div class="products-item-info product-buy">
                   <span class="product-buy-price">3 900 руб.</span>
-                  <button class="product-buy-button">Купить</button>
+                  <a class="product-buy-button" href="#">Купить</a>
                 </div>
             </li>
     			</ul>
 
     			<ul class="pagination">
     				<li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
+            <li><a class="active" href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
     			</ul>
