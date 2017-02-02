@@ -3,19 +3,49 @@ font-size: 14px;
 height: 24px;
 color: #000000;
 font-weigt: bold;
-font-family: PT Sans Narrow, Helvetica Neue, Helvetica, Arial, sans-serif;
+font-family: PT Sans Narrow, Helvetica, Helvetica, Arial, sans-serif;
 }
 h1 {
 font-size: 30px;
 height: 42px;
 color: #000000;
 font-weigt: bold;
-font-family: PT Sans Narrow, Helvetica Neue, Helvetica, Arial, sans-serif;
+font-family: PT Sans Narrow, Helvetica, Helvetica, Arial, sans-serif;
 }
 h2 {
 font-size: 14px;
 height: 18px;
 color: #000000;
 font-weigt: bold;
-font-family: PT Sans Narrow, Helvetica Neue, Helvetica, Arial, sans-serif;
+font-family: PT Sans Narrow, Helvetica, Helvetica, Arial, sans-serif;
+} 
+
+
+body {
+  background:  black url("barbershop-shop-grid.jpg") no-repeat 50% 3px;
+  background-size: 1122px auto;
+}
+.page-header {
+	
+background: red;
+}
+.container {
+	width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background: red;
+
+
+}
+.header-navigation {
+	width: 780px;
+	float: left;
+	min-height: 70px;
+
+}
+.header-user-block {
+	width: 140px;
+	float: right;
+	min-height: 70px;
+
 }
