@@ -22,12 +22,20 @@ font-family: PT Sans Narrow, Helvetica, Helvetica, Arial, sans-serif;
 
 
 body {
-  background:  black url("barbershop-shop-grid.jpg") no-repeat 50% 3px;
+  background:  black url("/img/barbershop-shop-grid.jpg") no-repeat 50% 3px;
   background-size: 1122px auto;
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+
 .page-header {
-	
-background: red;
+	margin-bottom: 60px;
+
 }
 .container {
 	width: 940px;
@@ -49,3 +57,54 @@ background: red;
 	min-height: 70px;
 
 }
+.page-header {
+	width: 300px;
+	margin-bottom: 18px;
+}
+.breadcrumbs {
+	width: 380px;
+	margin-bottom: 55px;
+}
+.filters {
+	width: 220px;
+	margin-bottom: 160px;
+}
+.producer {
+	width: 220px;
+	margin-bottom: 23px;
+}
+.product-groups {
+	width: 220px;
+}
+.wrap {
+width: 700px;
+margin-bottom: 50px;
+}
+.products {
+	margin-bottom: 45px;
+
+}
+.pagination {
+	width: 220px;
+
+}
+.main-footer {
+
+}
+.footer-contacts {
+width: 380px;	
+}
+.footer-social {
+	width: 140px;	
+
+}
+.footer-copyright {
+	width: 140px;
+}
+
+
+
+
+
+
+
