@@ -25,6 +25,7 @@ body {
   background:  black url("/img/barbershop-shop-grid.jpg") no-repeat 50% 3px;
   background-size: 1122px auto;
 }
+
 .clearfix::after {
   content: "";
 
